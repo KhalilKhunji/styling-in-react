@@ -14,6 +14,7 @@ function App() {
       <Button2 buttonText="Example 2" />
       <Button3 buttonText="Example 3" />
       <Button4 buttonText="Example 4" />
+      <Button4 buttonText="Example 4.5" $primary />
       <Button5 buttonText="Example 5" />
       <Button6 buttonText="Example 6" />
     </div>

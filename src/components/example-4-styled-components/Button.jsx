@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const StyledButton = styled.button`
     background-color: #86ba8a;
@@ -7,10 +7,17 @@ const StyledButton = styled.button`
     padding: 15px 50px;
     font-size: 24pt;
     width: 300px;
+
+    ${props =>
+        props.$primary &&
+        css`
+        background-color: #BF4F74;
+        color: white;
+    `};
 `;
 
-const Button = ({ buttonText }) => {
-    return <StyledButton>{buttonText}</StyledButton>;
+const Button = ({ buttonText, $primary }) => {
+    return <StyledButton $primary={$primary}>{buttonText}</StyledButton>;
 };
-  
+
 export default Button;
